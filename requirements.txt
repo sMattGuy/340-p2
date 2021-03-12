@@ -1,0 +1,21 @@
+Project 2: 5 thread summation part 2
+Generate an array of 10,000 random numbers (code written in chromebook)
+
+Divide the workload into 5 different threads t1, t2, t3, t4, t5
+
+On each thread, fork an additional 20 threads
+
+Main thread → 5 subthreads → 20 sub sub threads per subthread
+
+Each of the final threads finds the minimum of 100 numbers 
+
+Have a size 20 array in the sub thread to hold the results of the sub sub thread
+
+The main thread will have a size 5 array to hold the sub threads results
+
+Include a non-multithreaded solution to check that the multithreaded solution works
+
+Refer to the runner function in the slides to understand threads and their implementations
+
+Pass to each thread a comma delimited string of the numbers it’ll be processing
+
